@@ -57,20 +57,50 @@
 // }
 
 // console.log(count);
-function reverseNumber(n){
-    let reverse = 0;
+// function reverseNumber(n){
+//     let reverse = 0;
     
-    while (n>=1) {
-       reminder = n % 10;
+//     while (n>=1) {
+//        reminder = n % 10;
        
-       reverse = (reverse*10) + reminder;
-       n=Math.floor(n/10)
+//        reverse = (reverse*10) + reminder;
+//        n=Math.floor(n/10)
+//     }
+//     console.log(reverse);
+    
+// }
+// reverseNumber(3456)
+
+// function checkplaindrom( n){
+//     let number =n;
+//     let reverse = 0;
+//     while (n>=1) {
+//        reminder = n % 10;
+       
+//        reverse = (reverse*10) + reminder;
+//        n=Math.floor(n/10)
+//     }
+//     console.log(reverse);
+//     if(number == reverse){
+//         console.log("number is plaindrom");
+        
+//     }
+//     else{
+//         console.log("number is not plaindrom");
+//     }
+// }
+
+// checkplaindrom(120)
+
+// 10 Find sum of digits
+
+function sumofdigit(n) {
+    let sum = 0;
+    while(n>=1){
+        sum = sum+n%10;
+        n=Math.floor(n/10);
     }
-    console.log(reverse);
+    console.log(sum);
     
 }
-reverseNumber(3456)
-
-
-
-
+sumofdigit(346)
