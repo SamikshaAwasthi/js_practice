@@ -48,10 +48,29 @@
 // console.log(f);
 
 // Count digits in a number
-let n = 324;
-let count = 0;
-for (let i = 0; i<n; i++) {
+// let n = 1;
+// let count = 0;
+// while (n>=1) {
+//     n%10
+//     n=n/10;
+//     count++;
+// }
+
+// console.log(count);
+function reverseNumber(n){
+    let reverse = 0;
     
- console.log();
- 
+    while (n>=1) {
+       reminder = n % 10;
+       
+       reverse = (reverse*10) + reminder;
+       n=Math.floor(n/10)
+    }
+    console.log(reverse);
+    
 }
+reverseNumber(3456)
+
+
+
+
