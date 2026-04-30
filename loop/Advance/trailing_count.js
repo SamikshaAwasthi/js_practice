@@ -9,3 +9,4 @@ function trailingZero(n) {
 }
 
 console.log(trailingZero(10));
+
